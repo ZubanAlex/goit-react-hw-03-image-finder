@@ -1,10 +1,10 @@
 import React from "react";
-import Loader from "react-loader-spinner";
-import styles from "./Spinner.module.css";
+import Spinner from "react-loader-spinner";
+import styles from "./Loader.module.css";
 
-const Spinner = () => {
+const Loader = () => {
   return (
-    <Loader
+    <Spinner
       className={styles.loader}
       type="ThreeDots"
       color="#3f51b5"
@@ -15,4 +15,4 @@ const Spinner = () => {
   );
 };
 
-export default Spinner;
+export default Loader;

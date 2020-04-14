@@ -2,7 +2,7 @@ import React from "react";
 import T from "prop-types";
 import ImageGalleryItem from "../ImageGalleryItem/ImageGalleryItem";
 import Button from "../Button/Button";
-import Spinner from "../Spinner/Spinner";
+import Loader from "../Loader/Loader";
 
 import styles from "./ImageGallery.module.css";
 
@@ -20,7 +20,7 @@ const ImageGallery = ({ imgArray, onGetFullUrl, loadMoreIMG, isLoading }) => {
           );
         })}
       </ul>
-      {isLoading && <Spinner />}
+      {isLoading && <Loader />}
       <Button onLoadMoreIMG={loadMoreIMG} />
     </>
   );
