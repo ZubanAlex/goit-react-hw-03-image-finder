@@ -1,9 +1,8 @@
 import React from "react";
 import Loader from "react-loader-spinner";
-import styles from "./Loaders.module.css";
+import styles from "./Spinner.module.css";
 
-const Loaders = () => {
-  console.log(styles.loader);
+const Spinner = () => {
   return (
     <Loader
       className={styles.loader}
@@ -16,4 +15,4 @@ const Loaders = () => {
   );
 };
 
-export default Loaders;
+export default Spinner;
